@@ -1,5 +1,5 @@
 
-import { BUY_STATE } from "../../tools/const"
+import { BUY_STATE, ITEM } from "../../tools/const"
 export function updateBuyAction(data) {
     return{
         type: BUY_STATE,
@@ -17,7 +17,7 @@ export const moreInfoByUrl = (url_path, item, history) => {
 }
 
 export const getCards = (item) => (dispatch) => {
-    dispatch(updateBuyAction({items: item}))
+    localStorage.setItem(ITEM, JSON.stringify(item))
 }
 
 

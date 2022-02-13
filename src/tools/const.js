@@ -3,3 +3,4 @@ export const TOKEN_PATH = "login";
 export const LOGIN_STATE = "LOGIN/STATE";
 export const BUY_STATE = "BUY/STATE";
 export const CONTACT_STATE = "CONTACT/STATE";
+export const ITEM = "item"
